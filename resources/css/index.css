@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,100..900&display=swap');
-
 /* Reseteo básico de estilo */
 * {
     margin: 0;
@@ -19,6 +17,8 @@ body {
     background-color: #ebf5ff;
     color: #E0E1DD;
     z-index: 1000;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 /* Estilos del encabezado */
@@ -43,6 +43,32 @@ header img {
 header h1 {
     color: #e3edf3;
     font-size: 2.5rem;
+}
+
+h1, h2 {
+    font-family: 'Merriweather', serif;
+}
+
+/* Estilos de la sección de información */
+.info-section {
+    background-color: #2a4a5b;
+    color: #e7f2ff;
+    text-align: center;
+    padding: 5rem 2rem;
+    margin: 0 auto;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.info-section h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.info-section p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 /* Estilos de la sección del portafolio */
@@ -76,6 +102,7 @@ header h1 {
     color: #e1eeff;
     font-size: 2rem;
     word-wrap: break-word;
+    overflow: hidden;
     overflow-wrap: break-word;
     font-style: italic;
     font-weight: 90;
@@ -83,8 +110,6 @@ header h1 {
 }
 
 .portfolio-section .portfolio-section-description {
-    min-width: 50vh;
-    max-width: 50vh;
 	margin: 10px auto;
 	padding: 10px;
 }
@@ -172,6 +197,10 @@ footer p {
 
     .portfolio-section h2 {
         font-size: 5rem;
+    }
+
+    .portfolio-section p {
+        font-size: 1.5rem;
     }
 
     .image-gallery img.horizontal {
