@@ -56,6 +56,7 @@ h1, h2 {
     text-align: center;
     padding: 5rem 2rem;
     margin: 0 auto;
+    width: 100%;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -79,14 +80,14 @@ h1, h2 {
 	text-align: center;
     min-height: 50vh;
     margin: 0 auto;
-    padding: 20px;
+    padding: 20px 0 20px 20px;
 }
 
-#city-frames {
+.color-one {
     background-color: #768faa;
 }
 
-#urban-lens {
+.color-two {
     background-color: #5e758d;
 }
 
@@ -110,16 +111,16 @@ h1, h2 {
 }
 
 .portfolio-section .portfolio-section-description {
-	margin: 10px auto;
+    min-width: 38%;
+	margin: 10px 10px;
 	padding: 10px;
 }
 
 .image-gallery-container {
-    margin: auto;
+    margin: auto 10px auto 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 70%;
     height: 70%;
 }
 
@@ -184,6 +185,17 @@ footer p {
 }
 
 /* Estilos responsivos */
+@media screen and (min-width: 1024px) {
+    .portfolio-section-description {
+        width: 30%;
+    }
+
+    .image-gallery-container {
+        max-width: 72%;
+        width: 60%;
+    }
+}
+
 @media (max-width: 1024px) {
     .portfolio-section {
         flex-direction: column;
@@ -206,6 +218,10 @@ footer p {
     .image-gallery img.horizontal {
         width: 80vh;
         object-fit: cover;
+    }
+
+    .image-gallery-container {
+        width: 90%;
     }
 
     .image-gallery img.vertical {
