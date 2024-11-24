@@ -72,6 +72,43 @@ h1, h2 {
     margin: 0 auto;
 }
 
+/* Estilos de la sección de sobre mi */
+.about-section {
+    color: #e7f2ff;
+    text-align: center;
+    padding: 5rem 2rem;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.about-section h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.about-section p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.social-media-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.social-media {
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.social-media img {
+    height: 8rem;
+}
+
 /* Estilos de la sección del portafolio */
 .portfolio-section {
     width: 100%;
@@ -146,7 +183,7 @@ h1, h2 {
 
 .image-gallery img {
     cursor: pointer;
-    height: 40vh;
+    height: 50vh;
     max-height: 100%;
     object-fit: cover;
     flex-grow: 1;
@@ -157,18 +194,18 @@ h1, h2 {
 }
 
 .image-gallery img:hover {
-    transform: scale(1.05);
+    transform: scale(1.01);
 }
 
-.fullscreen {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-  z-index: 1000; 
-  cursor: zoom-out; 
+.image-container {
+    margin-bottom: 1rem;
+}
+
+.image-container p {
+    font-style: normal;
+    font-size: 1rem;
+    color: #ebf5ff;
+    opacity: 0.75;
 }
 
 /* Estilos del pie de página */
